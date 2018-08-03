@@ -12,17 +12,17 @@ const routes: Routes = [
   },
 
   {
-    path: "Home",
+    path: "home",
     component: HomeComponent
   },
 
   {
-    path: "Setting",
+    path: "setting",
     component: SettingComponent
   },
 
   {
-    path: "Class",
+    path: "class",
     component: ClassComponent
   },
 
