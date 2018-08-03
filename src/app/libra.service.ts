@@ -18,14 +18,14 @@ export class LibraService {
   routeHome(){
 
     // Return back to favorites
-    this.router.navigate(['home']);
+    this.router.navigate(['/home']);
 
   }
 
   routeClass(){
 
     // Return back to favorites
-    this.router.navigate(['class']);
+    this.router.navigate(['/class']);
 
   }
 
