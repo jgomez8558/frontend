@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { EventComponent } from './event/event.component';
+import { ClassComponent } from './class/class.component';
 import { SettingComponent } from './setting/setting.component';
 
 @NgModule({
@@ -14,8 +14,9 @@ import { SettingComponent } from './setting/setting.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    EventComponent,
-    SettingComponent
+    ClassComponent,
+    SettingComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,

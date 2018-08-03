@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
-import { EventComponent } from './event/event.component'
+import { ClassComponent } from './class/class.component'
 
 const routes: Routes = [
   { 
@@ -22,8 +22,8 @@ const routes: Routes = [
   },
 
   {
-    path: "Event",
-    component: EventComponent
+    path: "Class",
+    component: ClassComponent
   },
 
   {
