@@ -15,8 +15,7 @@ import { SettingComponent } from './setting/setting.component';
     LoginComponent,
     HomeComponent,
     ClassComponent,
-    SettingComponent,
-    ClassComponent
+    SettingComponent
   ],
   imports: [
     BrowserModule,
