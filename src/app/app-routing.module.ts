@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
 import { ClassComponent } from './class/class.component'
 
+
 const routes: Routes = [
   { 
     path: "",
