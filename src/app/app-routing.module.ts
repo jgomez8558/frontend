@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
 import { ClassComponent } from './class/class.component'
 
+
 const routes: Routes = [
   { 
     path: "",
@@ -12,17 +13,17 @@ const routes: Routes = [
   },
 
   {
-    path: "Home",
+    path: "home",
     component: HomeComponent
   },
 
   {
-    path: "Setting",
+    path: "setting",
     component: SettingComponent
   },
 
   {
-    path: "Class",
+    path: "class",
     component: ClassComponent
   },
 
