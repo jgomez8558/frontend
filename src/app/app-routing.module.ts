@@ -3,8 +3,9 @@ import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
-import { ClassComponent } from './class/class.component'
-
+import { ClassComponent } from './class/class.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { 
@@ -18,6 +19,11 @@ const routes: Routes = [
   },
 
   {
+    path: "profile",
+    component: ProfileComponent
+  },
+
+  {
     path: "setting",
     component: SettingComponent
   },
@@ -25,6 +31,11 @@ const routes: Routes = [
   {
     path: "class",
     component: ClassComponent
+  },
+
+  {
+    path: "registration",
+    component: RegistrationComponent
   },
 
   {
