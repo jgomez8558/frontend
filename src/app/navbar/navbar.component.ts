@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LibraService } from '../libra.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
@@ -14,7 +15,20 @@ export class NavbarComponent implements OnInit {
    
   }
 
-  ngOnInit() {
+  public ngOnInit() {
+    // Sticky Header
+    $(function(){
+      $(window).scroll(function() {
+         if($(window).scrollTop() >= 100) {
+           $('nav').addClass('scrolled');
+         }
+        else {
+          $('nav').removeClass('scrolled');
+        }
+      });
+    });
+    
+    
   }
 
 }
