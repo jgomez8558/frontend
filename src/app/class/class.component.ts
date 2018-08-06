@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { LibraService } from '../libra.service';
 
+
+
 @Component({
   selector: 'app-class',
   templateUrl: './class.component.html',
   styleUrls: ['./class.component.css']
+  
 })
 export class ClassComponent implements OnInit {
 
@@ -16,5 +19,4 @@ export class ClassComponent implements OnInit {
   
   ngOnInit() {
   }
-
 }
