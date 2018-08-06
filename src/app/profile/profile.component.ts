@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { LibraService } from '../libra.service';
 
 @Component({
-  selector: 'app-class',
-  templateUrl: './class.component.html',
-  styleUrls: ['./class.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class ClassComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   constructor(public libra: LibraService) {
 
     this.libra = libra;
    
   }
-  
+
   ngOnInit() {
   }
 
