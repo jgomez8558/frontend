@@ -10,29 +10,29 @@ export class LibraService {
 
   routeRegistration(){
 
-    // Return back to favorites
-    // this.router.navigate(['Registration']);
+    // Route to Registration
+    this.router.navigate(['/registration']);
 
   }
 
   routeHome(){
 
-    // Return back to favorites
+    // Route to Home
     this.router.navigate(['/home']);
 
   }
 
   routeClass(){
 
-    // Return back to favorites
+    // Route to Class
     this.router.navigate(['/class']);
 
   }
 
   routeProfile(){
 
-    // Return back to favorites
-    // this.router.navigate(['profile']);
+    // Route to Profile
+    this.router.navigate(['/profile']);
 
   }
 
