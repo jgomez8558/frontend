@@ -48,11 +48,5 @@ export class LibraService {
     this.libra = libra;
     this.router = router;
 
-    this.http.get<any>("Http://localhost:3000/test").subscribe((response) => {
-
-      console.log (response);
-
-      this.users = response;
-      }
-    )};
+  }
 }
