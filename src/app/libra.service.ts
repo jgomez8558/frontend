@@ -11,6 +11,7 @@ export class LibraService {
 
   routeRegistration(){
 
+
     // Route to Registration
     this.router.navigate(['/registration']);
 
@@ -37,7 +38,7 @@ export class LibraService {
 
   }
 
-  test() {
+  test(){
     this.http.get<any>(`Http://localhost:3000/test`).subscribe((response) => {
       console.log(response);
     });
