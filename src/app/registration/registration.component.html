@@ -2,7 +2,7 @@
     <div class="row main">
         <div class="main-login main-center">
             <h5>Sign up for Brain Trendy.</h5>
-            <form id="signup" name="signup" method="POST" action="Http://localhost:3000/users/signup">
+            <form id="signup" name="signup" method="POST" action="/users/signup">
 
                 <div class="form-group">
                     <label for="name" class="cols-sm-2 control-label">First Name</label>
@@ -68,12 +68,12 @@
                     <label for="email" class="cols-sm-2 control-label">Role</label>
                     <div class="cols-sm-10">
                         <div class='custom-radio'>
-                            <input type='radio' id='Q100_1' name='Q100' value='1'>
+                            <input type='radio' id='Q100_1' name='Q100' value='1'> Teacher
                             <div class='circle-select'></div>
                         </div>
 
                         <div class='custom-radio'>
-                            <input type='radio' id='Q100_2' name='Q100' value='2'>
+                            <input type='radio' id='Q100_2' name='Q100' value='2'> Student
                             <div class='circle-select'></div>
                         </div>
 
@@ -126,7 +126,7 @@
             </form>
 
             <div>
-                <button (click)="test()">Test</button>
+                <button (click)="libra.test()">Test</button>
             </div>
         </div>
     </div>
