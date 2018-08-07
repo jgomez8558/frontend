@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class LibraService {
+ users = [];
 
   routeRegistration(){
 
@@ -41,5 +42,11 @@ export class LibraService {
     this.libra = libra;
     this.router = router;
 
-   }
+    this.http.get<any>("Http://localhost3000/get-users").subscribe((response) => {
+
+      console.log (response);
+
+      this.users = response;
+    }
+    )}
 }
