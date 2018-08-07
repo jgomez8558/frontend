@@ -58,7 +58,7 @@ nav {
 
   li {
     display: inline-block;
-    color: black;
+    color: #009FD7;
     padding: 0 1rem;
     font-family: sans-serif;
   }
@@ -75,7 +75,7 @@ nav {
 
 .scrolled {
   min-height: 10px;
-  background: black;
+  background: #009FD7;
   transition: 0.35s all ease;
 }
 
