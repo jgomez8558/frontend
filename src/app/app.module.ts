@@ -11,6 +11,7 @@ import { SettingComponent } from './setting/setting.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ClassinfoComponent } from './classinfo/classinfo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProfileComponent } from './profile/profile.component';
     SettingComponent,
     NavbarComponent,
     RegistrationComponent,
-    ProfileComponent
+    ProfileComponent,
+    ClassinfoComponent
   ],
   imports: [
     BrowserModule,
