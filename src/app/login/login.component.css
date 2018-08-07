@@ -26,7 +26,7 @@ div.login {
   height:0px;
   width:100%;
   height:210px;
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("https://cdn.pixabay.com/photo/2014/06/29/07/50/education-379217_960_720.jpg") center no-repeat;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("../../assets/juan/login.jpg") center no-repeat;
   background-size:cover;
   transform:skew(0deg,-8deg) translateY(-25px);
   z-index:2;
@@ -36,7 +36,7 @@ div.login {
   position:absolute;
   width:80px;
   height:80px;
-  background:#e65b60;
+  background:#008DCB;
   color:#fff;
   bottom:-35px;
   left:50%;
@@ -87,7 +87,7 @@ div.login {
   outline:none;
   height:40px;
   text-transform:uppercase;
-  background:rgba(255, 60, 65, 0.84);
+  background:#008DCB;
   width:100%;
   color:#fff;
   cursor:pointer;
