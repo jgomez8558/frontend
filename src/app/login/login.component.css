@@ -36,7 +36,7 @@ div.login {
   position:absolute;
   width:80px;
   height:80px;
-  background:#e65b60;
+  background:#008DCB;
   color:#fff;
   bottom:-35px;
   left:50%;
@@ -87,7 +87,7 @@ div.login {
   outline:none;
   height:40px;
   text-transform:uppercase;
-  background:rgba(255, 60, 65, 0.84);
+  background:#008DCB;
   width:100%;
   color:#fff;
   cursor:pointer;
