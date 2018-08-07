@@ -6,6 +6,7 @@ import { SettingComponent } from './setting/setting.component';
 import { ClassComponent } from './class/class.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ClassinfoComponent } from './classinfo/classinfo.component';
 
 const routes: Routes = [
   { 
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path: "class",
     component: ClassComponent
+  },
+
+  {
+    path: "classinfo",
+    component: ClassinfoComponent
   },
 
   {
