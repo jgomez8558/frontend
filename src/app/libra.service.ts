@@ -12,6 +12,22 @@ export class LibraService {
 
   routeRegistration(){
 
+    this.http.post<any>(`http://localhost:3000/users/signup`, {
+      "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
+      "lastName": (<HTMLInputElement>document.getElementById('lastName')).value,
+      "username": (<HTMLInputElement>document.getElementById('username')).value
+    })
+    .toPromise()
+    .then( result => {
+      console.log(result);
+    })
+    .catch(err => {
+      console.log(err);
+      
+    })
+    // this.http.get<any>(`Http://localhost:3000/test`).subscribe((response) => {
+    //   console.log(response);
+    // });
 
 
     // Route to Registration
@@ -41,22 +57,7 @@ export class LibraService {
   }
 
   test(){
-    this.http.post<any>(`http://localhost:3000/users/signup`, {
-      "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
-      "lastName": (<HTMLInputElement>document.getElementById('lastName')).value,
-      "username": (<HTMLInputElement>document.getElementById('username')).value
-    })
-    .toPromise()
-    .then( result => {
-      console.log(result);
-    })
-    .catch(err => {
-      console.log(err);
-      
-    })
-    // this.http.get<any>(`Http://localhost:3000/test`).subscribe((response) => {
-    //   console.log(response);
-    // });
+    
   }
 
   constructor(public libra: LibraService, public router: Router, public http: HttpClient) {
