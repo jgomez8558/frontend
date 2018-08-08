@@ -15,8 +15,19 @@ export class LibraService {
     this.http.post<any>(`http://localhost:3000/users/signup`, {
       "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
       "lastName": (<HTMLInputElement>document.getElementById('lastName')).value,
-      "username": (<HTMLInputElement>document.getElementById('username')).value
+      "address": (<HTMLInputElement>document.getElementById('address')).value,
+      "email": (<HTMLInputElement>document.getElementById('email')).value,
+      "phone": (<HTMLInputElement>document.getElementById('phone')).value,
+      "role": (<HTMLInputElement>document.getElementById('role')).value,
+      "username": (<HTMLInputElement>document.getElementById('username')).value,
+      "password": (<HTMLInputElement>document.getElementById('password')).value,
     })
+
+
+
+
+
+    // gets back informtion from login
     .toPromise()
     .then( result => {
       console.log(result);
@@ -25,12 +36,10 @@ export class LibraService {
       console.log(err);
       
     })
-    // this.http.get<any>(`Http://localhost:3000/test`).subscribe((response) => {
-    //   console.log(response);
-    // });
+    
 
 
-    // Route to Registration
+    // Route to Registration (ADD IF STATEMENT HERE)
     this.router.navigate(['/registration']);
 
   }
