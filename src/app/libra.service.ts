@@ -8,11 +8,39 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class LibraService {
- users = [];
+ 
+  // Varibles
+  firstName: String;
+  lastName: String;
+  address: String;
+  email: String;
+  phone: Number;
+  role: Number;
+  username: String;
+  password: String;
+
+  users = [];
 
   routeRegistration(){
 
+    const user = {
+
+      firstName: this.firstName,
+      lastName: this.lastName,
+      address: this.address,
+      email: this.email,
+      phone: this.phone,
+      role: this.role,
+      username: this.username,
+      password: this.password
+
+    }
+
+    
+
+    /*
     this.http.post<any>(`http://localhost:3000/users/signup`, {
+
       "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
       "lastName": (<HTMLInputElement>document.getElementById('lastName')).value,
       "address": (<HTMLInputElement>document.getElementById('address')).value,
@@ -23,25 +51,38 @@ export class LibraService {
       "password": (<HTMLInputElement>document.getElementById('password')).value,
     })
 
-
-
-
-
     // gets back informtion from login
     .toPromise()
     .then( result => {
       console.log(result);
+
+      if (result == true) {
+
+        // Route to Registration 
+        this.router.navigate(['/home']);
+  
+      }
+      
     })
     .catch(err => {
       console.log(err);
       
     })
+    */
+  }
+
+  // Checking password
+  confirmPassword(password){
     
+    if(password == this.password) {
 
+      this.password = password;
+    
+    } else {
 
-    // Route to Registration (ADD IF STATEMENT HERE)
-    this.router.navigate(['/registration']);
+      alert("Password does not match, retype it again.");
 
+    }
   }
 
   routeHome(){
@@ -63,10 +104,6 @@ export class LibraService {
     // Route to Profile
     this.router.navigate(['/profile']);
 
-  }
-
-  test(){
-    
   }
 
   constructor(public libra: LibraService, public router: Router, public http: HttpClient) {

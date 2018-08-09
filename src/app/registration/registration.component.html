@@ -2,7 +2,7 @@
     <div class="row main">
         <div class="main-login main-center">
             <h5>Sign up for Brain Trendy.</h5>
-            <form id="signup" name="signup" method="POST" action="http://localhost:3000/users/signup/">
+            <form (submit)="routeRegistration()">
 
                 <div class="form-group">
                     <label for="name" class="cols-sm-2 control-label">First Name</label>
@@ -11,7 +11,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter your  First Name" required>
+                            <input type="text" [(ngModel)]="firstName" class="form-control" name="firstName" id="firstName" placeholder="Enter your  First Name" required>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter your Last Name" required>
+                            <input type="text" [(ngModel)]="lastName" class="form-control" name="lastName" id="lastName" placeholder="Enter your Last Name" required>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="address" id="address" placeholder="Enter your Address" required>
+                            <input type="text" [(ngModel)]="address" class="form-control" name="address" id="address" placeholder="Enter your Address" required>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-envelope fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" required>
+                            <input type="text" [(ngModel)]="email" class="form-control" name="email" id="email" placeholder="Enter your Email" required>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your Phone Number" required>
+                            <input type="text" [(ngModel)]="phone" class="form-control" name="phone" id="phone" placeholder="Enter your Phone Number" required>
                         </div>
                     </div>
                 </div>
@@ -68,12 +68,12 @@
                     <label for="email" class="cols-sm-2 control-label">Role</label>
                     <div class="cols-sm-10">
                         <div class='custom-radio'>
-                            <input type='radio' id='Q100_1' name='Q100' value='1'> Teacher
+                            <input type='radio' id='role1' [(ngModel)]="role" name='role1' value='1'> Teacher
                             <div class='circle-select'></div>
                         </div>
 
                         <div class='custom-radio'>
-                            <input type='radio' id='Q100_2' name='Q100' value='2'> Student
+                            <input type='radio' id='role2' [(ngModel)]="role" name='role2' value='2'> Student
                             <div class='circle-select'></div>
                         </div>
 
@@ -88,7 +88,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-users fa" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" required>
+                            <input type="text" [(ngModel)]="username" class="form-control" name="username" id="username" placeholder="Enter your Username" required>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
                             </span>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" required>
+                            <input type="password" [(ngModel)]="password" class="form-control" name="password" id="password" placeholder="Enter your Password" required>
                         </div>
                     </div>
                 </div>
@@ -118,11 +118,15 @@
                 </div>
 
                 <div class="form-group ">
-
-                    <!--   Create a button that funtions -->
-                    <button target="_blank" type="submit" value="Submit" id="button" class="btn btn-primary btn-lg btn-block login-button" (click)="libra.routeRegistration()">Register</button>
+                    
+                    <a target="_blank" type="submit" value="Submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
                 </div>
+
             </form>
+
+            <!-- <div>
+                <button (click)="libra.test()">Test</button>
+            </div> -->
         </div>
     </div>
 </div>
