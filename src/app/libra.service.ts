@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+// import { ConsoleReporter } from 'jasmine';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,34 @@ export class LibraService {
 
   routeRegistration(){
 
-    // Route to Registration
+    this.http.post<any>(`http://localhost:3000/users/signup`, {
+      "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
+      "lastName": (<HTMLInputElement>document.getElementById('lastName')).value,
+      "address": (<HTMLInputElement>document.getElementById('address')).value,
+      "email": (<HTMLInputElement>document.getElementById('email')).value,
+      "phone": (<HTMLInputElement>document.getElementById('phone')).value,
+      "role": (<HTMLInputElement>document.getElementById('role')).value,
+      "username": (<HTMLInputElement>document.getElementById('username')).value,
+      "password": (<HTMLInputElement>document.getElementById('password')).value,
+    })
+
+
+
+
+
+    // gets back informtion from login
+    .toPromise()
+    .then( result => {
+      console.log(result);
+    })
+    .catch(err => {
+      console.log(err);
+      
+    })
+    
+
+
+    // Route to Registration (ADD IF STATEMENT HERE)
     this.router.navigate(['/registration']);
 
   }
@@ -37,10 +65,8 @@ export class LibraService {
 
   }
 
-  test() {
-    this.http.get<any>(`Http://localhost:3000/test`).subscribe((response) => {
-      console.log(response);
-    });
+  test(){
+    
   }
 
   constructor(public libra: LibraService, public router: Router, public http: HttpClient) {

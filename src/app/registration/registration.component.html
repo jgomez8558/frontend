@@ -2,7 +2,7 @@
     <div class="row main">
         <div class="main-login main-center">
             <h5>Sign up for Brain Trendy.</h5>
-            <form id="signup" name="signup" method="POST" action="Http://localhost:3000/users/signup">
+            <form id="signup" name="signup" method="POST" action="http://localhost:3000/users/signup/">
 
                 <div class="form-group">
                     <label for="name" class="cols-sm-2 control-label">First Name</label>
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="name" class="cols-sm-2 control-label">Adress</label>
+                    <label for="name" class="cols-sm-2 control-label">Address</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon">
@@ -118,16 +118,11 @@
                 </div>
 
                 <div class="form-group ">
-                    <a target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+
+                    <!--   Create a button that funtions -->
+                    <button target="_blank" type="submit" value="Submit" id="button" class="btn btn-primary btn-lg btn-block login-button" (click)="libra.routeRegistration()">Register</button>
                 </div>
-
-
-
             </form>
-
-            <div>
-                <button (click)="libra.test()">Test</button>
-            </div>
         </div>
     </div>
 </div>
