@@ -23,6 +23,7 @@ export class LibraService {
 
   routeRegistration(){
 
+    /*
     const user = {
 
       firstName: this.firstName,
@@ -34,11 +35,11 @@ export class LibraService {
       username: this.username,
       password: this.password
 
-    }
+    }*/
 
     
 
-    /*
+    
     this.http.post<any>(`http://localhost:3000/users/signup`, {
 
       "firstName": (<HTMLInputElement>document.getElementById('firstName')).value,
@@ -68,7 +69,7 @@ export class LibraService {
       console.log(err);
       
     })
-    */
+  
   }
 
   // Checking password
