@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ClassinfoComponent } from './classinfo/classinfo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ClassinfoComponent } from './classinfo/classinfo.component';
     NavbarComponent,
     RegistrationComponent,
     ProfileComponent,
-    ClassinfoComponent
+    ClassinfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
